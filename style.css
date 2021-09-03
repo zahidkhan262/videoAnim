@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 40vh;
+  background: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  color: #000;
+  line-height: 100vh;
+  text-align: center;
+  mix-blend-mode: screen;
+  padding-top: 60px;
+}
+@media only screen and(max-width: 889px) {
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .container h1 {
+    font-size: 40px;
+    line-height: normal;
+    padding-top: 20px;
+  }
+}
